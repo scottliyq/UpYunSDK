@@ -4,6 +4,9 @@ Upyun is a cloud service specific for image. It provides image services for web 
 
 It's still at the early stage and more APIs will be added.
 
+## How to install
+
+The project is using cocoapods to manage 3rd party library. Please visit http://cocoapods.org for more details.
 
 ## Contact
 
