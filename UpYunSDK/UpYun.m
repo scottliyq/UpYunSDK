@@ -45,6 +45,8 @@ delegate;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         _sharedClient = [[self alloc] init];
+        _sharedClient.bucket = @"yuebao";
+        _sharedClient.passcode = @"eMxLxDgwckcAYONysXkuIyUAf90=";
     });
     
     return _sharedClient;

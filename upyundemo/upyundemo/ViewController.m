@@ -60,12 +60,7 @@
     UpYun *uy = [UpYun sharedClient];
     uy.delegate = self;
     uy.expiresIn = 100;
-//    uy.bucket = @"andyyao";
-//    uy.passcode = @"Qdky/Iai0eF5D99q/i/GEOSd4hU=";
-//    uy.bucket = @"yuebao";
-//    uy.passcode = @"eMxLxDgwckcAYONysXkuIyUAf90=";
-    uy.bucket = @"themoment";
-    uy.passcode = @"6EShEJfhmQQDNUW/cDaZUoTEBmc=";
+
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
 //    [params setObject:@"0,1000" forKey:@"content-length-range"];
 //    [params setObject:@"png" forKey:@"allow-file-type"];
@@ -73,7 +68,7 @@
     NSDate *d = [NSDate date];
     NSString* resourcePath = [[NSBundle mainBundle] resourcePath];
     NSString* img = [resourcePath stringByAppendingPathComponent:@"LInKb.jpg"];
-    [uy uploadImagePath:img savekey:[NSString stringWithFormat:@"/scott/%@.jpq", [uy generateRandomString]]];
+    [uy uploadImagePath:img savekey:[NSString stringWithFormat:@"/scott001/%@.jpq", [uy generateRandomString]]];
 }
 
 - (void)upYun:(UpYun *)upYun requestDidFailWithError:(NSError *)error {
